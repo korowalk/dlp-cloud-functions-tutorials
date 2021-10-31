@@ -25,15 +25,15 @@ import os
 # ----------------------------
 #  User-configurable Constants
 
-PROJECT_ID = '[PROJECT_ID_HOSTING_STAGING_BUCKET]'
+PROJECT_ID = 'v450-korowalk'
 """The bucket the to-be-scanned files are uploaded to."""
-STAGING_BUCKET = '[YOUR_QUARANTINE_BUCKET]'
+STAGING_BUCKET = 'korowalk-quarantine'
 """The bucket to move "sensitive" files to."""
-SENSITIVE_BUCKET = '[YOUR_SENSITIVE_DATA_BUCKET]'
+SENSITIVE_BUCKET = 'korowalk-sensitive'
 """The bucket to move "non sensitive" files to."""
-NONSENSITIVE_BUCKET = '[YOUR_NON_SENSITIVE_DATA_BUCKET]'
+NONSENSITIVE_BUCKET = 'korowalk-sensitive'
 """ Pub/Sub topic to notify once the  DLP job completes."""
-PUB_SUB_TOPIC = '[PUB/SUB_TOPIC]'
+PUB_SUB_TOPIC = 'classify-topic'
 """The minimum_likelihood (Enum) required before returning a match"""
 """For more info visit: https://cloud.google.com/dlp/docs/likelihood"""
 MIN_LIKELIHOOD = 'POSSIBLE'
